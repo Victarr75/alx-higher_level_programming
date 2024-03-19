@@ -1,11 +1,17 @@
 #!/usr/bin/python3
+
 def delete_at(my_list=[], idx=0):
-    # Check if the index is valid (non-negative and within the range of the list)
+    # Check if idx is negative or out of range
     if idx < 0 or idx >= len(my_list):
-        return my_list  # Return the same list if the index is invalid
+        return my_list
+    
+    # Initialize an empty list to store the modified list
+    new_list = []
 
-    # Create a new list excluding the element at the specified index
-    new_list = my_list[:idx] + my_list[idx+1:]
-
+    # Iterate over the original list
+    for i in range(len(my_list)):
+        # Append elements to the new list except the one at idx
+        if i != idx:
+            new_list.append(my_list[i])
+    
     return new_list
-
