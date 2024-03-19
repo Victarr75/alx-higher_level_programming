@@ -3,7 +3,7 @@ def print_reversed_list_integer(my_list=[]):
     # Check if the list is empty
     if not my_list:
         pass
-    
+    else:
     # Reverse the list in place
     my_list.reverse()
     
