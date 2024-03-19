@@ -4,10 +4,10 @@ def print_reversed_list_integer(my_list=[]):
     if not my_list:
         pass
     else:
-    # Reverse the list in place
-    my_list.reverse()
-    
-    # Iterate through the reversed list
-    for i in my_list:
-        # Print each integer using str.format()
-        print("{:d}".format(i))
+        # Reverse the list in place
+        my_list.reverse()
+
+        # Iterate through the reversed list
+        for i in my_list:
+            # Print each integer using str.format()
+            print("{:d}".format(i))
