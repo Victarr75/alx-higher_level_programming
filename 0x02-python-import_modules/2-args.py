@@ -3,10 +3,10 @@
 import sys
 
 if __name__ == "__main__":
-    if len(sys.argv) == 1:
-        print("0 argument{}.".format('.' if len(sys.argv) == 1 else ''))
+    args_count = len(sys.argv) - 1
+    if args_count == 0:
+        print("0 argument{}.".format('.' if args_count == 0 else ''))
     else:
-        print("{} argument{}:".format(len(sys.argv) - 1, 's' if len(sys.argv) > 2 else ''))
+        print("{} argument{}:".format(args_count, 's' if args_count > 1 else ''))
         for i in range(1, len(sys.argv)):
             print("{}: {}".format(i, sys.argv[i]))
-
