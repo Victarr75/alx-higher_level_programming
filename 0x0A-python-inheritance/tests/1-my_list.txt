@@ -1,0 +1,10 @@
+=== Test MyList class ===
+# Test creating an instance of MyList
+>>> my_list = MyList([3, 1, 2])
+>>> my_list.print_sorted()
+[1, 2, 3]
+
+# Test creating an empty instance of MyList
+>>> empty_list = MyList()
+>>> empty_list.print_sorted()
+[]
