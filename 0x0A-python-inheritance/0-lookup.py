@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""
-Returns a list of available attributes and methods of an object.
-"""
+''' function that returns the list
+'''
+
 
 def lookup(obj):
-    """Returns a list of attributes and methods of an object."""
+    ''' function: lookup()
+    Returns a list object
+    '''
     return dir(obj)

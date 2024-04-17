@@ -1,15 +1,14 @@
 #!/usr/bin/python3
-"""
-A custom list class that inherits from the built-in list class.
-"""
+''' Module: 1-my_list
+'''
+
 
 class MyList(list):
-    """
-    A custom list class that provides additional functionality.
-    """
+    ''' Represents a MyList
+    '''
 
     def print_sorted(self):
-        """Prints the list sorted in ascending order."""
-        sorted_list = sorted(self)
-        print(sorted_list)
-
+        '''
+        prints the list, but sorted
+        '''
+        print(sorted(self))
