@@ -1,6 +1,4 @@
 #!/usr/bin/node
-// 2-rectangle.js
-
 class Rectangle {
   constructor(w, h) {
     if (w > 0 && h > 0) {
